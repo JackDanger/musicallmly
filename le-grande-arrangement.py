@@ -11,14 +11,14 @@ from rich import print
 import pandas as pd
 
 # Initialize musicbrainz and discogs clients
-musicbrainzngs.set_useragent("MusicOrganizer", "1.0", "your-email@example.com")
-discogs = discogs_client.Client("MusicOrganizer/1.0", user_token="your_discogs_token")
+musicbrainzngs.set_useragent("Musicallmly", "1.0", "musicallmly@jackdanger.com")
+discogs = discogs_client.Client("Musicallmly/1.0", user_token="your_discogs_token")
 
 # Initialize Ollama client
 ollama_client = OllamaClient("http://localhost:8000")
 
 # SQLite database for progress tracking
-conn = sqlite3.connect("music_organizer.db")
+conn = sqlite3.connect("musicallmly.db")
 cursor = conn.cursor()
 cursor.execute(
     """CREATE TABLE IF NOT EXISTS progress

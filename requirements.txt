@@ -1,0 +1,8 @@
+discogs-client
+ffmpeg-python
+musicbrainzngs
+mutagen
+pandas
+requests
+rich
+sqlite3
